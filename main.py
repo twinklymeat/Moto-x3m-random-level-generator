@@ -1,4 +1,15 @@
 import random
+import sys
+
+
+while True:
+    inputs = input("type 1 for random, 2 for only CMG: ")
+    if inputs == "2":
+        exec(open("cmgOnly.py").read())
+        sys.exit()
+    elif inputs == "1":
+        break
+
 
 motoX3M = list(range(1,26))
 motoX3Mpool = list(range(1,23))
