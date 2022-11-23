@@ -19,4 +19,4 @@ chosenGame = games[gameInt]
 chosenLevel = chosenGame[random.randint(0,len(chosenGame)-1)]
 
 print(gameStr[gameInt])
-print(chosenLevel)
+print("Level:", chosenLevel)
