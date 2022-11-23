@@ -1,23 +1,11 @@
 import random
 
-motoX3M = []
-motoX3Mpool = []
-motoX3Mspooky = []
-motoX3Mwinter = []
-motoX3Mpoki = []
-motoX3MspookyPoki = []
-
-#writes lists of level numbers
-for i in range(1,51):
-    if i <= 25:
-        motoX3M.append(i)
-        motoX3Mwinter.append(i)
-    if i <= 22:
-        motoX3Mspooky.append(i)
-        motoX3Mpool.append(i)
-    if i <= 32:
-        motoX3MspookyPoki.append(i)
-    motoX3Mpoki.append(i)
+motoX3M = list(range(1,26))
+motoX3Mpool = list(range(1,23))
+motoX3Mspooky = list(range(1,23))
+motoX3Mwinter = list(range(1,26))
+motoX3Mpoki = list(range(1,51))
+motoX3MspookyPoki = list(range(1,33))
 
 #initializes lists
 games = [motoX3M, motoX3Mspooky, motoX3Mwinter, motoX3Mpool] #makes a list containing all the lists with level numbers
