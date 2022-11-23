@@ -21,4 +21,5 @@ while True:
     print("Level:", level)
     
     
-    input()
+    if input() == "end":
+        break

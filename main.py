@@ -14,13 +14,16 @@ gameStr = ["Moto X3M", "Moto X3M Spooky Land", "Moto X3M Winter", "Moto X3M Pool
 platforms = ["CMG", "Poki"]
 
 #chooses items from lists with random numbers
-chosenPlat = random.choice(platforms)
-gameInt = random.randint(0, len(games)-1)
-if chosenPlat == "Poki":
-    chosenGame = gamesPoki[gameInt]
-else:
-    chosenGame = games[gameInt]
-chosenLevel = chosenGame[random.randint(0,len(chosenGame)-1)]
+while True:
+    chosenPlat = random.choice(platforms)
+    gameInt = random.randint(0, len(games)-1)
+    if chosenPlat == "Poki":
+        chosenGame = gamesPoki[gameInt]
+    else:
+        chosenGame = games[gameInt]
+    chosenLevel = chosenGame[random.randint(0,len(chosenGame)-1)]
 
-print(gameStr[gameInt], chosenPlat)
-print("Level:", chosenLevel)
+    print(gameStr[gameInt], chosenPlat)
+    print("Level:", chosenLevel)
+    if input() == "end":
+        break
