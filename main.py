@@ -14,7 +14,7 @@ for i in range(1,26):
         motoX3Mpool.append(i)
 
 #initializes lists
-games = [motoX3M, motoX3Mspooky, motoX3Mwinter, motoX3Mpool] #makes a list containing all the levels and level numbers
+games = [motoX3M, motoX3Mspooky, motoX3Mwinter, motoX3Mpool] #makes a list containing all the lists with level numbers
 gameStr = ["Moto X3M", "Moto X3M Spooky Land", "Moto X3M Winter", "Moto X3M Pool Party"]
 platforms = ["CMG", "Poki"]
 
