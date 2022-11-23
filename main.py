@@ -14,9 +14,11 @@ for i in range(1,26):
 
 games = [motoX3M, motoX3Mspooky, motoX3Mwinter, motoX3Mpool]
 gameStr = ["Moto X3M", "Moto X3M Spooky Land", "Moto X3M Winter", "Moto X3M Pool Party"]
+platforms = ["CMG", "Poki"]
+chosenPlat = random.choice(platforms)
 gameInt = random.randint(0, len(games)-1)
 chosenGame = games[gameInt]
 chosenLevel = chosenGame[random.randint(0,len(chosenGame)-1)]
 
-print(gameStr[gameInt])
+print(gameStr[gameInt], chosenPlat)
 print("Level:", chosenLevel)
