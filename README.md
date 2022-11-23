@@ -2,4 +2,4 @@
 Picks a random Moto X3M track
 
 
-just run main.py and follow the instructions
+just run **main.py** and follow the instructions
